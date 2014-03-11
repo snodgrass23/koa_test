@@ -18,6 +18,7 @@ app.use(require('koa-static')('./public'));
 
 // components
 require('./components/user')(app);
+require('./components/dashboard')(app);
 
 app.listen(3000);
 console.log("app listening on localhost:3000");
