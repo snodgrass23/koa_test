@@ -1,9 +1,13 @@
 body
-  color #333
-  background #cbe5e3
+  color main_text_color
+  background bg_color
+
+.wrap
+  background wrap_bg_color
+  padding 1em 2em
 
 h1
-  color #555
+  color h1_color
 
 a
   color inherit
@@ -13,13 +17,12 @@ a
 
 input
   font-size 1.2em
-  border solid 1px #bbb
+  border form_element_border_style
   border-radius 5px
 
 input[type=file]
   font-size 16px
   border none
-  // padding 0
 
 form
   li
@@ -38,9 +41,6 @@ button
   border solid 1px #ddd
   background: #eee
   border-radius: 3px
-
-.wrap
-  background rgba(255,255,255,0.8)
 
 .micro
   font-size 0.8em

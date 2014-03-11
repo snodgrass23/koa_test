@@ -89,6 +89,17 @@ td {
 a img {
   border: none;
 }
+body {
+  width: 100%;
+}
+body *zoom:1:before,
+body *zoom:1:after {
+  content: "";
+  display: table;
+}
+body *zoom:1:after {
+  clear: both;
+}
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -127,94 +138,14 @@ h5 {
   padding: 0.75em 0;
   font-size: 1.15em;
 }
-* {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-html,
-body {
-  min-height: 100%;
-}
-.micro {
-  padding: 5px;
-}
 .wrap {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 20%;
-  right: 20%;
-}
-.pad {
-  padding: 0.5em;
-}
-.pad1 {
-  padding: 1em;
-}
-.pad2 {
-  padding: 2em;
-}
-.pushDown {
-  padding-top: 5em;
-}
-.smallColumn {
-  width: 260px;
-}
-.column1of3 {
-  width: 33%;
-}
-.centered {
-  margin: 0 auto;
-}
-.tac {
-  text-align: center;
-}
-.tal {
-  text-align: left;
-}
-.tar {
-  text-align: right;
-}
-.block {
-  display: block;
-}
-.flash-messages {
-  position: absolute;
-  top: 0;
-  left: 20%;
-  right: 20%;
-  margin: 0;
-  z-index: 999;
-  text-align: center;
-}
-.flash-messages >li {
-  padding: 0.5em;
-}
-input {
-  padding: 0.4em;
-}
-input.block {
-  width: 100%;
-  margin: 0.75em 0;
-}
-.button-bar {
-  text-align: right;
-}
-.button-bar button {
-  padding: 10px 20px;
-  margin: 0 0 10px 0;
-  display: inline-block;
-}
-.button-bar .micro {
-  margin-right: 2em;
-}
-.logo {
-  width: 260px;
-  height: 100px;
-  background: #000 url("/images/base12_light.png") center center no-repeat;
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 940px;
+  margin: 0 10px;
+  *width: 940px -correction;
+  *margin: 0 10px -correction;
 }
 .is_hidden {
   display: none;
@@ -222,6 +153,10 @@ input.block {
 body {
   color: #333;
   background: #cbe5e3;
+}
+.wrap {
+  background: rgba(255,255,255,0.8);
+  padding: 1em 2em;
 }
 h1 {
   color: #555;
@@ -261,9 +196,6 @@ button {
   background: #eee;
   -webkit-border-radius: 3px;
   border-radius: 3px;
-}
-.wrap {
-  background: rgba(255,255,255,0.8);
 }
 .micro {
   font-size: 0.8em;
