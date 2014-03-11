@@ -15,5 +15,11 @@
     "mongoose": "latest",
     "mongoose-utils": "latest",
     "lodash": "latest"
+  },
+  "devDependencies": {
+    "grunt-contrib-clean": "latest",
+    "grunt-contrib-copy": "latest",
+    "grunt-contrib-concat": "latest",
+    "grunt-contrib-uglify": "latest"
   }
 }
