@@ -1,0 +1,13 @@
+extends ../../../shared/views/layout
+
+block subject
+
+block content
+  form(action='/signin', method='post')
+    input.block(type='email', name='email', placeholder='email', value=email)
+    input.block(type='password', name='password', placeholder='password', value=)
+    .button-bar
+      button(type='submit') Sign in
+    .button-bar
+      a.micro(href='/register') Register
+      a.micro(href='/reset') Reset password?

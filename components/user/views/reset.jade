@@ -1,0 +1,13 @@
+extends ../../../shared/views/layout
+
+block content
+
+  h3.micro Please enter your email address and we will send you a new password.
+  br
+  form(action='/reset', method='post')
+    ul
+      li
+        input.block(type='email', name='email', placeholder="email address..")
+    .button-bar
+      button(type='submit') Send New Password
+      a.micro(href='/register') Cancel

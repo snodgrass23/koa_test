@@ -1,0 +1,8 @@
+{
+  "name": "bills_koa",
+  "version": "0.0.1",
+  "dependencies": {
+    "react": "latest"
+  },
+  "devDependencies": {}
+}

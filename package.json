@@ -1,0 +1,19 @@
+{
+  "name": "koa-bills",
+  "version": "0.0.1",
+  "directories": {},
+  "dependencies": {
+    "koa": "latest",
+    "jade": "latest",
+    "stylus": "latest",
+    "nib": "latest",
+    "koa-static": "latest",
+    "koa-stylus": "latest",
+    "koa-views": "latest",
+    "koa-router": "latest",
+    "koa-session": "latest",
+    "mongoose": "latest",
+    "mongoose-utils": "latest",
+    "lodash": "latest"
+  }
+}
